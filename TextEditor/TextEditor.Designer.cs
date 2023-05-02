@@ -122,6 +122,7 @@ namespace TextEditor
             this.Menu_File_OpenFile.Name = "Menu_File_OpenFile";
             this.Menu_File_OpenFile.Size = new System.Drawing.Size(180, 22);
             this.Menu_File_OpenFile.Text = "Open";
+            this.Menu_File_OpenFile.Click += new System.EventHandler(this.Menu_File_OpenFile_Click);
             // 
             // Menu_File_SaveFile
             // 
@@ -161,14 +162,16 @@ namespace TextEditor
             // Menu_Edit_Copy
             // 
             this.Menu_Edit_Copy.Name = "Menu_Edit_Copy";
-            this.Menu_Edit_Copy.Size = new System.Drawing.Size(103, 22);
+            this.Menu_Edit_Copy.Size = new System.Drawing.Size(180, 22);
             this.Menu_Edit_Copy.Text = "Copy";
+            this.Menu_Edit_Copy.Click += new System.EventHandler(this.Menu_Edit_Copy_Click);
             // 
             // Menu_Edit_Paste
             // 
             this.Menu_Edit_Paste.Name = "Menu_Edit_Paste";
-            this.Menu_Edit_Paste.Size = new System.Drawing.Size(103, 22);
+            this.Menu_Edit_Paste.Size = new System.Drawing.Size(180, 22);
             this.Menu_Edit_Paste.Text = "Paste";
+            this.Menu_Edit_Paste.Click += new System.EventHandler(this.Menu_Edit_Paste_Click);
             // 
             // Menu_Edit_Undo
             // 
@@ -196,20 +199,23 @@ namespace TextEditor
             // Menu_Format_Bold
             // 
             this.Menu_Format_Bold.Name = "Menu_Format_Bold";
-            this.Menu_Format_Bold.Size = new System.Drawing.Size(130, 22);
+            this.Menu_Format_Bold.Size = new System.Drawing.Size(180, 22);
             this.Menu_Format_Bold.Text = "Bold";
+            this.Menu_Format_Bold.Click += new System.EventHandler(this.Menu_Format_Bold_Click);
             // 
             // Menu_Format_Italic
             // 
             this.Menu_Format_Italic.Name = "Menu_Format_Italic";
-            this.Menu_Format_Italic.Size = new System.Drawing.Size(130, 22);
+            this.Menu_Format_Italic.Size = new System.Drawing.Size(180, 22);
             this.Menu_Format_Italic.Text = "Italic";
+            this.Menu_Format_Italic.Click += new System.EventHandler(this.Menu_Format_Italic_Click);
             // 
             // Menu_Format_Underline
             // 
             this.Menu_Format_Underline.Name = "Menu_Format_Underline";
-            this.Menu_Format_Underline.Size = new System.Drawing.Size(130, 22);
+            this.Menu_Format_Underline.Size = new System.Drawing.Size(180, 22);
             this.Menu_Format_Underline.Text = "Underline";
+            this.Menu_Format_Underline.Click += new System.EventHandler(this.Menu_Format_Underline_Click);
             // 
             // alignToolStripMenuItem
             // 
@@ -287,6 +293,7 @@ namespace TextEditor
             this.btnOpenFile.Name = "btnOpenFile";
             this.btnOpenFile.Size = new System.Drawing.Size(23, 22);
             this.btnOpenFile.Text = "Open File";
+            this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
             // 
             // btnSaveFile
             // 
@@ -311,6 +318,7 @@ namespace TextEditor
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(23, 22);
             this.btnCopy.Text = "Copy";
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
             // btnPaste
             // 
@@ -320,6 +328,7 @@ namespace TextEditor
             this.btnPaste.Name = "btnPaste";
             this.btnPaste.Size = new System.Drawing.Size(23, 22);
             this.btnPaste.Text = "Paste";
+            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
             // 
             // toolStripSeparator2
             // 
@@ -334,6 +343,7 @@ namespace TextEditor
             this.btnBold.Name = "btnBold";
             this.btnBold.Size = new System.Drawing.Size(23, 22);
             this.btnBold.Text = "Bold";
+            this.btnBold.Click += new System.EventHandler(this.btnBold_Click);
             // 
             // btnItalic
             // 
@@ -343,6 +353,7 @@ namespace TextEditor
             this.btnItalic.Name = "btnItalic";
             this.btnItalic.Size = new System.Drawing.Size(23, 22);
             this.btnItalic.Text = "Italic";
+            this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
             // 
             // btnUnderline
             // 
@@ -352,6 +363,7 @@ namespace TextEditor
             this.btnUnderline.Name = "btnUnderline";
             this.btnUnderline.Size = new System.Drawing.Size(23, 22);
             this.btnUnderline.Text = "Underline";
+            this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
             // 
             // toolStripSeparator3
             // 
@@ -388,10 +400,12 @@ namespace TextEditor
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "(*.TXT)|*TXT";
             // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.DefaultExt = "txt";
+            this.saveFileDialog1.Filter = "(*.TXT)|*.TXT";
             // 
             // printDialog1
             // 
